@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+        {% load staticfiles %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div>
+    <div class="profilebox">
+        <div class="profileimg">
+            <img src="https://picsum.photos/150/150/?random" alt="pro" class="circle">
+        </div>
+        <div class="profile">
+            <div class="profiledetail">
+                <div class="detail_txt id">jaeyongnam</div>
+                <div class="button">프로필 편집</div>
+                <a href="{% url 'new' %}" class="button"> 글쓰기 </a>
+                <i class="fas fa-cog size"></i>
+            </div>
+            <div class="profiledetail">
+                <div class="detail_txt">게시물 <b>10</b></div>
+                <div class="detail_txt">팔로워 <b>100M</b></div>
+                <div class="detail_txt">팔로우 <b>0</b></div>
+            </div>
+            <div class="profiledetail">남재용</div>
+        </div>
+    </div>
+    <div class="highlights">
+        <div class="highlight">
+            <div class="highimg">
+                <img src="https://picsum.photos/75/75/?random" alt="high" class="circle">
+            </div>
+            <div class="highcaption">🇨🇷</div>
+        </div>
+        <div class="highlight">
+            <div class="highimg">
+                <img src="https://picsum.photos/75/75/?random" alt="high" class="circle">
+            </div>
+            <div class="highcaption">🇨🇳</div>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="subnav">
+            <div style="margin-right: 60px">게시물</div>
+            <div style="margin-right: 60px">IGTV</div>
+            <div style="margin-right: 60px">저장됨</div>
+            <div style="margin-right: 60px">태그됨</div>
+        </div>
+    </div>
+    <div class="detail-box">
+        <div class="instaimg"> <img src= "{{ post.contents.url }}" width="100%", height="100%"> </div>
+        </div>
+</body>
+{% endblock content %}
+</html>

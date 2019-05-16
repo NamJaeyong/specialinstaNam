@@ -1,0 +1,156 @@
+
+
+.navbar{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+    background-color: white;
+    border-bottom: 1px solid rgb(224, 223, 223);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.nav-left{
+    display: block;
+
+}
+
+.nav-center{
+    width: 215px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(224,224,224);
+    background-color: #fafafa;
+    color: #999;
+    font-size: 14px;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-right{
+    display: flex;
+}
+
+.fa-compass, .fa-heart, .fa-user{
+    margin: 10px;
+}
+
+.profilebox{
+    width: 75%;
+    margin: 110px auto 0 auto;
+    display: flex;
+}
+
+.profileimg {
+    margin: 0 100px;
+
+    object-fit: cover;
+    
+    width: 160px;
+    height: 160px;
+} 
+
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.imgs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px 0;
+    justify-content: space-evenly;
+    
+}
+
+.highlights {
+    margin: 50px auto;
+    width: 70%;
+    display: flex;
+    align-content: center;
+}
+
+.highlight {
+    width: 83px;
+    margin: 0 25px;
+}
+
+.highimg {
+    border-radius: 100%;
+    margin: auto;
+    width: 76px;
+    height: 76px;
+}
+
+.highcaption{
+    text-align: center;
+}
+
+.circle {
+    border-radius: 100%;
+    border: 1px solid rgb(224,224,224);
+}
+
+
+.button {
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1.5px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    color: blue;
+}
+
+
+.profiledetail {
+    display: flex;
+    align-content: center;
+    margin: 20px 0;
+}
+
+.detail_txt{
+    margin-right: 50px;
+}
+
+.id{
+    /* font-weight: bold; */
+    font-size: 25px;
+}
+
+.subnav{
+    margin: 20px auto;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 12px;
+}
+
+.contents{
+    width: 70%;
+    margin: 0 auto;
+    border-top: 1px solid #dbdbdb;
+}
+
+
+div{
+display: block;
+}
+
+.instaimg{
+    width: 288px;
+    height: 288px;
+}

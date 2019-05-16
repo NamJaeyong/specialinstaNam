@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body><div class="navbar">
+        <div class="nav-left">
+                <a href="{% url 'home' %}">
+            <img class="logo" src="{% static 'insta-logo.png' %}" alt="logo" width="120px"></a>
+        </div>
+        <div class="nav-center">
+            <i class="fas fa-search"></i>
+            검색
+        </div>
+        <div class="nav-right">
+                {% if user.is_authenticated %}
+                <div class="navitem"> hello! mr.{{user}}. Have a nice Day!</div>
+                <div class="navitem"><a href="{% url 'logout' %}">로그아웃</a></div>
+                {% else %}
+                <div class="navitem"><a href="{% url 'signup' %}">회원가입</a></div>
+                <div class="navitem"><a href="{% url 'login' %}">로그인</a></div>
+        
+                {% endif %}
+            <i class="far fa-compass size"></i>
+            <i class="far fa-heart size"></i>
+            <i class="far fa-user size"></i>
+        </div>
+    </div>
+{% block content %}
+
+{% endblock content %}
+</body>
+</html>
